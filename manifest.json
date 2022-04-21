@@ -1,0 +1,11 @@
+{
+
+    "name" : "hello extend",
+    "description" : "testing chrome extensions",
+    "version" : "0.1",
+    "manifest_version" : 3,
+    "action" : {
+        "default_popup" : "popup.html"
+    }
+
+}
