@@ -3,10 +3,16 @@ const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { resolve } = require('path');
 
-const tsRule = {
+const tsLoaderConfig = {
     test: /\.ts(x?)$/,
     exclude: /node_modules/,
     use: 'ts-loader',
+}
+
+const styleLoaderConfig = {
+    test: /\.css$/,
+    exclude: /node_modules/,
+    use: ['style-loader', 'css-loader']
 }
 
 const plugins = [
@@ -33,7 +39,7 @@ module.exports = {
         path: resolve(__dirname, 'dist'),
     },
     module: {
-        rules: [tsRule],
+        rules: [tsLoaderConfig, styleLoaderConfig],
     },
     plugins,
 }

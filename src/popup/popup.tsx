@@ -1,5 +1,6 @@
-import React, {FC} from 'react';
+import React, { FC, useState } from 'react';
 import { render } from 'react-dom';
+import './popup.css'
 
 interface IProps {
 
@@ -7,8 +8,10 @@ interface IProps {
 
 export const Popup: FC<IProps> = () => {
     return (
-        <div>
-            Popup goes here...
+        <div className='App'>
+            <div className='header'>
+                  
+            </div>
         </div>
     );
 }

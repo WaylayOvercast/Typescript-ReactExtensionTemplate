@@ -1,6 +1,6 @@
 {
 
-    "name" : "hello extend",
+    "name" : "ts-template",
     "description" : "testing chrome extensions",
     "version" : "0.1",
     "manifest_version" : 3,
